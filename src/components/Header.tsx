@@ -17,10 +17,10 @@ export default function Header() {
           <div className="ml-2 flex flex-col">
 
             <ruby className="text-3xl font-bold text-blue-600 ml-2">
-              PaPiRa Blog
-              <rt className="text-xs text-gray-400">パピラ ブログ</rt>
+              立花堂
+              <rt className="text-xs text-gray-400">立花堂</rt>
             </ruby>
-            <p className="text-xs">非エンジニアでもわかるIT系ブログ</p>
+            <p className="text-xs">立花堂のサブタイトル</p>
           </div>
         </Link>
 

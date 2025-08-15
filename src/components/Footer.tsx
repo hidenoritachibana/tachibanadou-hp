@@ -9,7 +9,7 @@ export default function Footer() {
       <a href="/contact" className="hover:underline">お問い合わせ</a>
     </div>
     {/* コピーライト */}
-    <p>&copy; {new Date().getFullYear()} PaPiRa Blog. All rights reserved.</p>
+    <p>&copy; {new Date().getFullYear()} tachibanadou. All rights reserved.</p>
   </div>
 </footer>
   );

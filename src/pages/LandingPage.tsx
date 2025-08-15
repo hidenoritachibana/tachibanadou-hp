@@ -1,12 +1,15 @@
+/**
+ * LP画面コンポーネント
+ */
 export default function LandingPage() {
   return (
     <div className="bg-gray-100 text-gray-800">
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-8 px-4 text-center">
-        <h1 className="text-4xl md:text-4xl font-bold mb-4">かんたん操作で請求書のPDFを作成</h1>
-        <p className="text-lg md:text-xl mb-8">登録不要・無料の電子請求書作成アプリ</p>
+        <h1 className="text-4xl md:text-4xl font-bold mb-4">かんたん操作で請求書等のPDFを作成</h1>
+        <p className="text-lg md:text-xl mb-8">登録不要・無料の電子請求書等作成アプリ</p>
         <a
-          href="/invoice/create" // 本番はルーティングに合わせて修正
+          href="/dashboard" // 本番はルーティングに合わせて修正
           className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100"
         >
           今すぐ使ってみる
@@ -17,11 +20,16 @@ export default function LandingPage() {
           <h2 className="text-3xl font-bold mb-8 text-gray-900">お知らせ</h2>
           <div className="bg-white rounded-lg shadow-md p-5 h-40 overflow-y-auto text-left">
             <ul className="space-y-6">
+              {/* 追加のお知らせはここに */}
+              <li className="border-l-4 border-blue-600 pl-5">
+                <p className="text-xs text-blue-600 font-semibold mb-1">2025/06/25</p>
+                <p className="text-gray-800 font-medium">見積書が作成できるようになりました。</p>
+              </li>
               <li className="border-l-4 border-blue-600 pl-5">
                 <p className="text-xs text-blue-600 font-semibold mb-1">2025/06/10</p>
                 <p className="text-gray-800 font-medium">PaPiRa(Ver.1.0.0)をリリースしました。</p>
               </li>
-              {/* 追加のお知らせはここに */}
+
             </ul>
           </div>
         </div>
@@ -68,7 +76,7 @@ export default function LandingPage() {
       <section className="py-10 text-center px-4 bg-gray-100">
         <h2 className="text-2xl font-bold mb-6">無料ですぐに使い始めましょう</h2>
         <a
-          href="/invoice/create"
+          href="/dashboard"
           className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded shadow hover:bg-blue-700"
         >
           今すぐ使ってみる
