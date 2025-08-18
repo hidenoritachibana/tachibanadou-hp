@@ -17,17 +17,25 @@ export default function Header() {
           <div className="ml-2 flex flex-col">
 
             <ruby className="text-3xl font-bold text-blue-600 ml-2">
-              立花堂
-              <rt className="text-xs text-gray-400">立花堂</rt>
+              株式会社 立花堂
+              <rt className="text-xs text-gray-400"></rt>
             </ruby>
             <p className="text-xs">立花堂のサブタイトル</p>
           </div>
         </Link>
 
-        {/* ハンバーガー */}
+        {/* PC用メニュー（md以上で表示） */}
+        <div className="hidden md:flex space-x-12 text-gray-700 font-medium">
+          <Link to="/about" className="hover:text-blue-600">ホーム</Link>
+          <Link to="/about" className="hover:text-blue-600">会社概要</Link>
+          <Link to="/services" className="hover:text-blue-600">サービス</Link>
+          <Link to="/contact" className="hover:text-blue-600">お問い合わせ</Link>
+        </div>
+
+        {/* ハンバーガー（モバイルのみ表示） */}
         <button
           onClick={toggleMenu}
-          className="text-gray-800"
+          className="md:hidden text-gray-800"
           aria-label="メニュー切り替え"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
