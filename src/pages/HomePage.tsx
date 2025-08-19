@@ -6,13 +6,14 @@ export default function HomePage() {
     <div className="bg-gray-50 text-gray-900">
 
       {/* Hero Section */}
-      <section className="bg-black text-white py-16 px-4 text-center">
+      <section className="bg-black text-white py-10 px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-200">
-          株式会社 立花堂
+          「アイデアを形に、世界をもっと便利に」
         </h1>
+        <br/>
         <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-200">
-          私たちは、中小企業や個人事業主の皆さまのために、<br />
-          シンプルで使いやすい業務支援ツールを提供しています。
+          アイデアや工夫を使いやすいITツールやWEBアプリで形にします。<br/>
+          日々の業務をスムーズに、仕事も暮らしも、もっと便利に。
         </p>
       </section>
 
@@ -37,17 +38,17 @@ export default function HomePage() {
 
       {/* 事業内容 Section */}
       <section className="py-12 px-6 max-w-6xl mx-auto bg-gray-50">
-        <h2 className="text-3xl font-bold text-center mb-12">事業内容</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">サービス</h2>
         <div className="grid md:grid-cols-3 gap-8 text-center">
           {[{
-            title: "登録不要ですぐ使える",
-            desc: "立花堂のツールはアカウント登録不要。すぐに使い始められる設計です。"
+            title: "アプリケーション作成",
+            desc: "なんかアプリつくるで"
           }, {
-            title: "スマホで手軽に",
-            desc: "PCはもちろん、スマートフォンからも快適に操作いただけます。"
+            title: "ホームページ作成",
+            desc: "HPとかつくるで"
           }, {
-            title: "PDF出力対応",
-            desc: "見積書・請求書など、入力したデータをワンクリックでPDF化できます。"
+            title: "SES事業",
+            desc: "はけんやん"
           }].map(({ title, desc }, i) => (
             <div
               key={i}
@@ -60,19 +61,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 製品一覧 Section */}
+      {/* 会社概要 Section */}
       <section className="bg-gray-50 py-12 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">製品一覧</h2>
+        <h2 className="text-3xl font-bold mb-8 text-gray-900">会社概要</h2>
         <p className="mb-6 text-gray-700 max-w-2xl mx-auto">
-          請求書・見積書作成アプリ「PaPiRa」をはじめ、業務効率化を支える各種Webアプリを開発・提供しています。
+          株式会社 立花堂の会社概要は以下をご参照ください。
         </p>
-        <div className="py-5 max-w-4xl mx-auto shadow-md rounded overflow-hidden">
-          <img
-            src="/image.png"
-            alt="アプリの画面"
-            className="w-full"
-          />
-        </div>
+        <a
+          href="mailto:info@tachibanado.co.jp"
+          className="inline-block bg-black text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition"
+        >
+          会社概要はこちら
+        </a>
+
       </section>
 
       {/* お問合せ Section */}

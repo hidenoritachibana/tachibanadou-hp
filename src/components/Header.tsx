@@ -12,23 +12,24 @@ export default function Header() {
     <header className="bg-white border-b shadow-sm sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 py-2 flex justify-between items-center">
         {/* ロゴ */}
-        <Link to="/" className="flex items-center text-xl font-bold text-blue-600">
-          <img src="/logo.png" alt="ロゴ" className="h-12 w-12" />
+        <Link to="/" className="flex items-center text-xl font-bold">
+          <img src="/logo.png" alt="ロゴ" className="h-20 w-20" />
           <div className="ml-2 flex flex-col">
 
-            <ruby className="text-3xl font-bold text-blue-600 ml-2">
+            <ruby className="text-3xl font-bold ml-2">
               株式会社 立花堂
-              <rt className="text-xs text-gray-400"></rt>
+              <rt className="text-xs text-gray-400">Tachibanado Company Limited</rt>
             </ruby>
-            <p className="text-xs">立花堂のサブタイトル</p>
+            <p className="text-xs">
+            </p>
           </div>
         </Link>
 
         {/* PC用メニュー（md以上で表示） */}
         <div className="hidden md:flex space-x-12 text-gray-700 font-medium">
           <Link to="/about" className="hover:text-blue-600">ホーム</Link>
-          <Link to="/about" className="hover:text-blue-600">会社概要</Link>
           <Link to="/services" className="hover:text-blue-600">サービス</Link>
+          <Link to="/about" className="hover:text-blue-600">会社概要</Link>
           <Link to="/contact" className="hover:text-blue-600">お問い合わせ</Link>
         </div>
 
