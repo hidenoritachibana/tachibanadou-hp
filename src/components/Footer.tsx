@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-<footer className="bg-gray-100 py-8">
+<footer className="bg-gray-50 py-8">
   <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-gray-600 text-center space-y-4">
     {/* リンクたち */}
     <div className="space-x-4">

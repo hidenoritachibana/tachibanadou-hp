@@ -8,12 +8,12 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="bg-black text-white py-10 px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-200">
-          「アイデアを形に、世界をもっと便利に」
+          アイデアを形に<br />暮らしをもっとスマートに
         </h1>
-        <br/>
+        <br />
         <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-200">
-          アイデアや工夫を使いやすいITツールやWEBアプリで形にします。<br/>
-          日々の業務をスムーズに、仕事も暮らしも、もっと便利に。
+          アイデアや工夫をITで形にします。<br />
+          毎日を効率化、あなたの時間をもっと豊かにします。
         </p>
       </section>
 
@@ -21,7 +21,7 @@ export default function HomePage() {
       <section className="bg-gray-50 py-10">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-8 text-gray-900">NEWS</h2>
-          <div className="bg-white rounded-lg shadow-md p-5 h-48 overflow-y-auto text-left">
+          <div className="bg-white rounded-lg shadow-md p-5 h-40 overflow-y-auto text-left">
             <ul className="space-y-6">
               <li className="border-l-4 border-black pl-5">
                 <p className="text-xs text-gray-600 font-semibold mb-1">2025/09/01</p>
@@ -41,21 +41,21 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold text-center mb-12">サービス</h2>
         <div className="grid md:grid-cols-3 gap-8 text-center">
           {[{
-            title: "アプリケーション作成",
-            desc: "なんかアプリつくるで"
+            title: "アプリ制作",
+            desc: "業務効率化や新しいアイデアを形にするためのオーダーメイドアプリを開発します。小規模なツールからWebアプリ・モバイルアプリまで柔軟に対応します。"
           }, {
-            title: "ホームページ作成",
-            desc: "HPとかつくるで"
+            title: "ホームページ制作",
+            desc: "企業・店舗の魅力を伝えるコーポレートサイトから、商品紹介ページ、LPまで幅広く対応。デザイン性と使いやすさを両立したサイトを制作します。"
           }, {
             title: "SES事業",
-            desc: "はけんやん"
+            desc: "システム開発・運用において即戦力となるエンジニアを派遣し、貴社のプロジェクトをサポートします。ニーズに合わせた柔軟な体制構築が可能です。"
           }].map(({ title, desc }, i) => (
             <div
               key={i}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer mx-auto w-[260px] flex flex-col items-center"
+              className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300 cursor-pointer mx-auto w-[280px] flex flex-col items-center"
             >
               <h3 className="text-xl font-semibold mb-3 text-black">{title}</h3>
-              <p className="text-gray-600">{desc}</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>
@@ -68,12 +68,11 @@ export default function HomePage() {
           株式会社 立花堂の会社概要は以下をご参照ください。
         </p>
         <a
-          href="mailto:info@tachibanado.co.jp"
+          href="/company-profile"
           className="inline-block bg-black text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition"
         >
           会社概要はこちら
         </a>
-
       </section>
 
       {/* お問合せ Section */}
@@ -83,7 +82,7 @@ export default function HomePage() {
           ご質問・ご相談などございましたら、下記よりお気軽にお問い合わせください。
         </p>
         <a
-          href="mailto:info@tachibanado.co.jp"
+          href="/contact"
           className="inline-block bg-black text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition"
         >
           メールでお問い合わせ

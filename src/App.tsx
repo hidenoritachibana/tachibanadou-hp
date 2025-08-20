@@ -5,6 +5,7 @@ import DashboardPage from "./pages/DashboardPage.tsx";
 import Contact from "./pages/ContactPage.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfService from "./pages/TermsOfService.tsx";
+import CompanyProfile from "./pages/CompanyProfile.tsx";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={
               <HomePage />} />
+            <Route path="/company-profile" element={
+              <CompanyProfile />} />
             <Route path="/dashboard" element={
               <DashboardPage />} />
             <Route path="/privacy-policy" element={

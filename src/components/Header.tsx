@@ -27,9 +27,9 @@ export default function Header() {
 
         {/* PC用メニュー（md以上で表示） */}
         <div className="hidden md:flex space-x-12 text-gray-700 font-medium">
-          <Link to="/about" className="hover:text-blue-600">ホーム</Link>
+          <Link to="/" className="hover:text-blue-600">ホーム</Link>
           <Link to="/services" className="hover:text-blue-600">サービス</Link>
-          <Link to="/about" className="hover:text-blue-600">会社概要</Link>
+          <Link to="/company-profile" className="hover:text-blue-600">会社概要</Link>
           <Link to="/contact" className="hover:text-blue-600">お問い合わせ</Link>
         </div>
 
