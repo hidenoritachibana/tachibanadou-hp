@@ -1,3 +1,6 @@
+/**
+ * お問合せ画面コンポーネント
+ */
 import { useState } from "react";
 
 const ContactPage = () => {
