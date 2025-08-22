@@ -72,6 +72,15 @@ export default function Header() {
                   <X size={24} />
                 </button>
               </div>
+              <Link to="/" className="block hover:text-blue-600" onClick={toggleMenu}>
+                ホーム
+              </Link>
+              <Link to="/service" className="block hover:text-blue-600" onClick={toggleMenu}>
+                サービス
+              </Link>
+              <Link to="/company-profile" className="block hover:text-blue-600" onClick={toggleMenu}>
+                会社概要
+              </Link>
               <Link to="/contact" className="block hover:text-blue-600" onClick={toggleMenu}>
                 お問い合わせ
               </Link>
