@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import DashboardPage from "./pages/DashboardPage.tsx";
+import ServicePage from "./pages/ServicePage.tsx";
 import Contact from "./pages/ContactPage.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfService from "./pages/TermsOfService.tsx";
@@ -17,6 +18,8 @@ function App() {
               <HomePage />} />
             <Route path="/company-profile" element={
               <CompanyProfile />} />
+             <Route path="/service" element={
+              <ServicePage />} />
             <Route path="/dashboard" element={
               <DashboardPage />} />
             <Route path="/privacy-policy" element={

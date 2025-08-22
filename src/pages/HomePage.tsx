@@ -85,7 +85,7 @@ export default function HomePage() {
           href="/contact"
           className="inline-block bg-black text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition"
         >
-          メールでお問い合わせ
+          お問い合わせはこちら
         </a>
       </section>
 
