@@ -14,7 +14,7 @@ const CompanyProfile = () => (
                     <tbody>
                         <tr className="border-b">
                             <th className="py-3 px-4 font-semibold w-40 text-gray-700">社　　名</th>
-                            <td className="py-3 px-4">株式会社 立花堂</td>
+                            <td className="py-3 px-4">株式会社立花堂</td>
                         </tr>
                         <tr className="border-b">
                             <th className="py-3 px-4 font-semibold text-gray-700">設　　立</th>
@@ -46,7 +46,7 @@ const CompanyProfile = () => (
                         </tr>
                         <tr>
                             <th className="py-3 px-4 font-semibold text-gray-700">代　　表</th>
-                            <td className="py-3 px-4">代表取締役 社長　立花 秀徳</td>
+                            <td className="py-3 px-4">代表取締役社長　立花秀徳</td>
                         </tr>
                     </tbody>
                 </table>
@@ -55,7 +55,7 @@ const CompanyProfile = () => (
                 <div className="space-y-6 sm:hidden">
                     <div>
                         <p className="text-gray-500 text-sm">社　　名</p>
-                        <p className="font-medium">株式会社 立花堂</p>
+                        <p className="font-medium">株式会社立花堂</p>
                     </div>
                     <div>
                         <p className="text-gray-500 text-sm">設　　立</p>
@@ -77,7 +77,7 @@ const CompanyProfile = () => (
                     </div>
                     <div>
                         <p className="text-gray-500 text-sm">代　　表</p>
-                        <p className="font-medium">代表取締役 社長　立花 秀徳</p>
+                        <p className="font-medium">代表取締役社長　立花秀徳</p>
                     </div>
                 </div>
 

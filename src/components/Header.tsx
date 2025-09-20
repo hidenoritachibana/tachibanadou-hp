@@ -17,8 +17,8 @@ export default function Header() {
           <div className="ml-2 flex flex-col">
 
             <ruby className="text-3xl font-bold ml-2">
-              株式会社 立花堂
-              <rt className="text-xs text-gray-400">Tachibanado Company Limited</rt>
+              株式会社立花堂
+              <rt className="text-xs text-gray-400">Tachibanadou</rt>
             </ruby>
             <p className="text-xs">
             </p>
