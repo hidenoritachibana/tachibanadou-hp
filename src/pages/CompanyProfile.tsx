@@ -46,7 +46,7 @@ const CompanyProfile = () => (
                         </tr>
                         <tr>
                             <th className="py-3 px-4 font-semibold text-gray-700">代　　表</th>
-                            <td className="py-3 px-4">代表取締役社長　立花秀徳</td>
+                            <td className="py-3 px-4">代表取締役　立花秀徳</td>
                         </tr>
                     </tbody>
                 </table>
