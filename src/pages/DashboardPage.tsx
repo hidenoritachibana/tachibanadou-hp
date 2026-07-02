@@ -1,13 +1,6 @@
 import { FileText, ClipboardList, Receipt } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const DashboardPage = () => {
-
-  const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
 
   // 仮の JSON データ
   const jsonData = {
