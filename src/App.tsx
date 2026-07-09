@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import DashboardPage from "./pages/DashboardPage.tsx";
 import ServicePage from "./pages/ServicePage.tsx";
@@ -11,7 +12,8 @@ import CompanyProfile from "./pages/CompanyProfile.tsx";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
+      <ScrollToTop />
+      <div className="min-h-screen bg-white">
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={

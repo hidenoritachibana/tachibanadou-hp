@@ -1,90 +1,75 @@
 /**
  * 会社概要
  */
+import { Reveal, PageHeader, ContactCTA } from "../components/ui.tsx";
+
+const PROFILE: { label: string; value: React.ReactNode }[] = [
+  { label: "社名", value: "株式会社立花堂" },
+  { label: "設立", value: "2025年 4月 1日" },
+  {
+    label: "事業内容",
+    value: (
+      <ul className="space-y-2">
+        {[
+          "アプリケーションの企画、制作、運営",
+          "ソフトウェアのライセンス販売",
+          "SaaS事業",
+          "人材育成、教育研修、講師事業",
+          "各種コンサルティング事業",
+        ].map((item, i) => (
+          <li key={i} className="flex items-baseline gap-3">
+            <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-brand-500 translate-y-[-2px]" />
+            {item}
+          </li>
+        ))}
+      </ul>
+    ),
+  },
+  {
+    label: "本社",
+    value: (
+      <>
+        大阪府大阪市北区梅田 1丁目2番2号
+        <br />
+        大阪駅前第2ビル 12-12
+      </>
+    ),
+  },
+  { label: "代表", value: "代表取締役　立花秀徳" },
+];
+
 const CompanyProfile = () => (
-    <>
+  <div className="bg-white">
+    <PageHeader
+      en="Company"
+      ja="会社概要"
+      lead="株式会社立花堂の会社概要をご紹介します。"
+    />
 
-        {/* 会社概要 Section */}
-        <section className="py-14 px-6 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">会社概要</h2>
-            <div className="bg-white rounded-lg shadow-md p-6 sm:p-8">
+    <section className="py-20 md:py-24">
+      <div className="max-w-3xl mx-auto px-6">
+        <Reveal>
+          <dl className="rounded-2xl border border-slate-200 bg-white divide-y divide-slate-100 overflow-hidden">
+            {PROFILE.map(({ label, value }, i) => (
+              <div
+                key={i}
+                className="grid sm:grid-cols-[9rem_1fr] gap-2 sm:gap-6 px-6 sm:px-8 py-6"
+              >
+                <dt className="text-sm font-semibold text-slate-400 tracking-wider pt-0.5">
+                  {label}
+                </dt>
+                <dd className="text-slate-800 font-medium leading-relaxed">
+                  {value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </Reveal>
+      </div>
+    </section>
 
-                {/* PC表示（テーブル形式） */}
-                <table className="hidden sm:table w-full text-left border-collapse">
-                    <tbody>
-                        <tr className="border-b">
-                            <th className="py-3 px-4 font-semibold w-40 text-gray-700">社　　名</th>
-                            <td className="py-3 px-4">株式会社立花堂</td>
-                        </tr>
-                        <tr className="border-b">
-                            <th className="py-3 px-4 font-semibold text-gray-700">設　　立</th>
-                            <td className="py-3 px-4">2025年 4月 1日</td>
-                        </tr>
-                        <tr className="">
-                            <th className="py-3 px-4 font-semibold text-gray-700">事業内容</th>
-                            <td className="py-3 px-4 border-b">アプリケーションの企画、制作、運営</td>
-                        </tr>
-                        <tr className="">
-                            <th className="py-3 px-4 font-semibold text-gray-700"></th>
-                            <td className="py-3 px-4 border-b">ソフトウェアのライセンス販売</td>
-                        </tr>
-                        <tr className="">
-                            <th className="py-3 px-4 font-semibold text-gray-700"></th>
-                            <td className="py-3 px-4 border-b">SaaS事業</td>
-                        </tr>
-                        <tr className="">
-                            <th className="py-3 px-4 font-semibold text-gray-700"></th>
-                            <td className="py-3 px-4 border-b">人材育成、教育研修、講師事業</td>
-                        </tr>
-                        <tr className="border-b">
-                            <th className="py-3 px-4 font-semibold text-gray-700"></th>
-                            <td className="py-3 px-4">各種コンサルディング事業</td>
-                        </tr>
-                        <tr className="border-b">
-                            <th className="py-3 px-4 font-semibold text-gray-700">本　　社</th>
-                            <td className="py-3 px-4">大阪府大阪市北区梅田 1丁目2番2号 大阪駅前第2ビル 12-12</td>
-                        </tr>
-                        <tr>
-                            <th className="py-3 px-4 font-semibold text-gray-700">代　　表</th>
-                            <td className="py-3 px-4">代表取締役　立花秀徳</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                {/* スマホ表示（縦並びカード形式） */}
-                <div className="space-y-6 sm:hidden">
-                    <div>
-                        <p className="text-gray-500 text-sm">社　　名</p>
-                        <p className="font-medium">株式会社立花堂</p>
-                    </div>
-                    <div>
-                        <p className="text-gray-500 text-sm">設　　立</p>
-                        <p className="font-medium">2025年 4月 1日</p>
-                    </div>
-                    <div>
-                        <p className="text-gray-500 text-sm">事業内容</p>
-                        <ul className="font-medium list-disc list-inside space-y-1">
-                            <li>アプリケーションの企画、制作、運営</li>
-                            <li>ソフトウェアのライセンス販売</li>
-                            <li>SaaS事業</li>
-                            <li>人材育成、教育研修、講師事業</li>
-                            <li>各種コンサルディング事業</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p className="text-gray-500 text-sm">本　　社</p>
-                        <p className="font-medium">大阪府大阪市北区梅田 1丁目2番2号<br />大阪駅前第2ビル 12-12</p>
-                    </div>
-                    <div>
-                        <p className="text-gray-500 text-sm">代　　表</p>
-                        <p className="font-medium">代表取締役社長　立花秀徳</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </>
+    <ContactCTA />
+  </div>
 );
 
 export default CompanyProfile;
